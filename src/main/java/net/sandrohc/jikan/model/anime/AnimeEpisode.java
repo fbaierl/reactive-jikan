@@ -6,11 +6,15 @@
 
 package net.sandrohc.jikan.model.anime;
 
+import java.io.*;
 import java.time.OffsetDateTime;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class AnimeEpisode {
+/**
+ * An anime episode
+ */
+public class AnimeEpisode implements Serializable {
 
 	@JsonProperty("episode_id")
 	public int episodeId;

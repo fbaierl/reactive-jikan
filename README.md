@@ -1,6 +1,6 @@
 # Reactive Jikan
 
-[![JCenter](https://img.shields.io/bintray/v/sandrohc/reactive-jikan/reactive-jikan?style=flat-square) ](https://bintray.com/sandrohc/reactive-jikan/reactive-jikan/1.0.0/link)
+[![Maven Central](https://img.shields.io/maven-central/v/net.sandrohc/reactive-jikan?label=version&style=flat-square)](https://mvnrepository.com/artifact/net.sandrohc/reactive-jikan)
 [![GitHub Workflow](https://img.shields.io/github/workflow/status/SandroHc/reactive-jikan/Build?style=flat-square)](https://github.com/SandroHc/reactive-jikan/actions?query=workflow:Build)
 [![Codecov](https://img.shields.io/codecov/c/github/SandroHc/reactive-jikan?style=flat-square)](https://codecov.io/gh/SandroHc/reactive-jikan)
 
@@ -12,31 +12,17 @@ Add the following dependency to your build file.
 
 If using Gradle (`build.gradle`):
 ```groovy
-allprojects {
-    repositories {
-        jcenter()
-    }
-}
-
 dependencies {
-    implementation 'net.sandrohc:reactive-jikan:1.0.0'
+    implementation 'net.sandrohc:reactive-jikan:1.0.1'
 }
 ```
 
 If using Maven (`pom.xml`):
 ```xml
-<repositories>
-    <repository>
-        <id>central</id>
-        <name>bintray</name>
-        <url>https://jcenter.bintray.com</url>
-    </repository>
-</repositories>
-
 <dependency>
     <groupId>net.sandrohc</groupId>
     <artifactId>reactive-jikan</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 

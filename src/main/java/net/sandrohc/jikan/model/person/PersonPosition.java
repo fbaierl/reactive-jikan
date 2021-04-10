@@ -6,7 +6,12 @@
 
 package net.sandrohc.jikan.model.person;
 
-public class PersonPosition {
+import java.io.*;
+
+/**
+ * A person's position/role on an anime/manga.
+ */
+public class PersonPosition implements Serializable {
 
     public String position;
 

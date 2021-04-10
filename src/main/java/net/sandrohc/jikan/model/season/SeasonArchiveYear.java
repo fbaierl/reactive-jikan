@@ -6,11 +6,15 @@
 
 package net.sandrohc.jikan.model.season;
 
+import java.io.*;
 import java.util.*;
 
 import net.sandrohc.jikan.model.enums.Season;
 
-public class SeasonArchiveYear {
+/**
+ * A anime season year archive, with the list of seasons available for the year.
+ */
+public class SeasonArchiveYear implements Serializable {
 
     public int year;
 

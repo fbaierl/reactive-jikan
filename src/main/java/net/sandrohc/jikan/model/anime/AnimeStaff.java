@@ -5,16 +5,21 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import net.sandrohc.jikan.model.base.MalEntity;
 
+/**
+ * A staff member.
+ */
 public class AnimeStaff extends MalEntity {
 
+	/** The URL to the staff on MyAnimeList. */
 	public String url;
 
+	/** The staff name. */
 	public String name;
 
 	@JsonProperty("image_url")
 	public String imageUrl;
 
-	public List<String> positions; // TODO: convert to enum
+	public List<String> positions;
 
 
 	@Override

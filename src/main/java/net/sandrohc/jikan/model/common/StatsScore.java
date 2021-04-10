@@ -6,7 +6,12 @@
 
 package net.sandrohc.jikan.model.common;
 
-public class StatsScore {
+import java.io.*;
+
+/**
+ * The information about a given score, like number of votes and percentage of total votes.
+ */
+public class StatsScore implements Serializable {
 
 	/** The total votes for this score */
 	public int votes;

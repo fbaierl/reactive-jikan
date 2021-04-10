@@ -30,29 +30,32 @@ public class Manga extends MangaBase {
 	@JsonProperty("title_synonyms")
 	public List<String> titleSynonyms;
 
-	public DateRange published;
-
+	/** The manga's rank on MyAnimeList's scoreboards. */
 	public int rank;
 
-	public float score;
-
+	/** The number of users that gave a score to this manga. */
 	@JsonProperty("scored_by")
 	public int scoredBy;
 
+	/** The manga's popularity rank on MyAnimeList's scoreboards. */
 	public int popularity;
 
-	public int members;
-
+	/** The number of users that added this anime to their favorites. */
 	public int favorites;
 
+	/** The background information. */
 	public String background;
 
+	/** A list of related material. */
 	public Related related;
 
+	/** The genres. */
 	public List<GenreEntity<MangaGenre>> genres = Collections.emptyList();
 
+	/** The authors. */
 	public List<MalSubEntity> authors = Collections.emptyList();
 
+	/** The serializations. */
 	public List<MalSubEntity> serializations = Collections.emptyList();
 
 }

@@ -6,14 +6,17 @@
 
 package net.sandrohc.jikan.model.common;
 
+import java.io.*;
+
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * A reviewer.
  */
-public class Reviewer {
+public class Reviewer implements Serializable {
 
+    /** The URL to the reviewer's profile on MyAnimeList. */
     public String url;
 
     @JsonProperty("image_url")

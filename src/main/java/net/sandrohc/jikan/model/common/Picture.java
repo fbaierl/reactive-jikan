@@ -6,13 +6,17 @@
 
 package net.sandrohc.jikan.model.common;
 
+import java.io.*;
+
 /**
  * A picture, containing large and small variants.
  */
-public class Picture {
+public class Picture implements Serializable {
 
+	/** The URL for the large variant. */
 	public String large;
 
+	/** The URL for the small variant. Images are resized to a width of 225 pixels. */
 	public String small;
 
 

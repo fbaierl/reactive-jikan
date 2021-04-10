@@ -6,14 +6,20 @@
 
 package net.sandrohc.jikan.model.anime;
 
+import java.io.*;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class AnimeVideosEpisode {
+/**
+ * A promotional video for an episode.
+ */
+public class AnimeVideosEpisode implements Serializable {
 
 	public String title;
 
 	public String episode;
 
+	/** The URL to the anime videos page on MyAnimeList. */
 	@JsonProperty("url")
 	public String url;
 

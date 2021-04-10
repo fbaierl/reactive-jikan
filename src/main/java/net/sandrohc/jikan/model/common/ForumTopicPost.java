@@ -6,12 +6,17 @@
 
 package net.sandrohc.jikan.model.common;
 
+import java.io.*;
 import java.time.OffsetDateTime;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ForumTopicPost {
+/**
+ * A post on a forum topic.
+ */
+public class ForumTopicPost implements Serializable {
 
+	/** The URL to the topic post on MyAnimeList. */
 	public String url;
 
 	@JsonProperty("author_name")
